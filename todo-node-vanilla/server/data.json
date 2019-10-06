@@ -1,5 +1,12 @@
-[
-    { "title": "Task 1"},
-    { "title": "Task 1"},
-    { "title": "Task 1"}
-]
+{
+    "tasks" : [
+        { "title": "Task 1"},
+        { "title": "Task 1"},
+        { "title": "Task 1"}
+    ],
+    "users": [
+        {"name": "Vasile" },
+        {"name": "Veronica"},
+        {"name": "Tandala"}
+    ]
+}
