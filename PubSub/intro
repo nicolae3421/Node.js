@@ -1,0 +1,20 @@
+Javascript - PubSub - Observer
+
+
+( DECOUPLED logic / Weak Links )
+EventEmitter
+    Front-End * DOM / HTMLDivElement
+    Front-End * DOM / HTMLAnchorElement
+
+Publisher <---------------> Subscriber
+(emit)   ----> events ----> (listen)
+
+
+----------- PROBLEM !!! ------------
+const my_object = {}
+class MyClass{
+
+}
+var my_o = new MyClass()
+
+
