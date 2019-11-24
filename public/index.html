@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hallo</h1>
+
+    <script> 
+        async function loadImage(image_n){
+            const response = await fetch(`/data/${image_n}.json`)
+            const myJson = await response.json();
+            console.log(JSON.stringify(myJson));
+            const response2 = await fetch(`/image/${image_n}`)
+            console.log(response2);
+
+            //forEach(callback ) -> div
+
+        }
+        loadImage('102-300x300.jpg')
+        
+    </script>
+</body>
+</html>
