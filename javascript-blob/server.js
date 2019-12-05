@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
     // data -> Buffer -> String(JSON) -> Object
     //                   String(JSON) <- Object
     data_obj = JSON.parse(data.toString())
-    data_obj.image = fs.readFileSync('./data/image.jpg')
+    data_obj.image = fs.readFileSync('./data/image.jpg').toString('base64')
     console.log(data_obj)
 
     res.setHeader('Content-type', 'aplication/json')
