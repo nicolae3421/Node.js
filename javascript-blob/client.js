@@ -18,7 +18,7 @@ function load (){
             // let img_data = Buffer.from(json.image.data)
 
             let image = document.createElement('img')
-                // image.src = 'data:image/jpeg;base64,' + img_data.toString('base64')
+                image.src = 'data:image/jpeg;base64,' + img_data
             // console.log(json)
 
             container.appendChild(h1)
